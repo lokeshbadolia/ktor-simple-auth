@@ -1,0 +1,1 @@
+rootProject.name = "com.codexcollab.ktor-simple-auth"
