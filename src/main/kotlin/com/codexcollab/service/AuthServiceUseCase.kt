@@ -2,13 +2,11 @@ package com.codexcollab.service
 
 import com.codexcollab.database.DatabaseFactory.dbQuery
 import com.codexcollab.database.tables.AuthTable
+import com.codexcollab.database.tables.UserTable
 import com.codexcollab.encrypt.hash
 import com.codexcollab.model.Auth
 import com.codexcollab.model.RegisterAuth
-import org.jetbrains.exposed.sql.ResultRow
-import org.jetbrains.exposed.sql.and
-import org.jetbrains.exposed.sql.insert
-import org.jetbrains.exposed.sql.select
+import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.statements.InsertStatement
 
 class AuthServiceUseCase : AuthService {

@@ -1,5 +1,6 @@
 package com.codexcollab.encrypt
 
+import com.codexcollab.model.TokenDecode
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.jwt.*
@@ -7,13 +8,16 @@ import io.ktor.server.auth.jwt.*
 
 fun Application.configureSecurity() {
     JwtConfig.initialize("ktorsimpleauth")
-    authentication {
+    install(Authentication) {
         jwt {
             verifier(JwtConfig.instance.verifier)
             validate {
-                val claim = it.payload.getClaim(JwtConfig.CLAIM).asInt()
-                if (claim != null) UserIdPrincipalForUser(claim)
-                else null
+                val id = it.payload.getClaim(JwtConfig.CLAIM).asInt()
+                //val email = it.payload.getClaim(JwtConfig.EMAIL).asString()
+                if (id != null) {
+                    //JWTPrincipal(it.payload)
+                    TokenDecode(id)
+                } else null
             }
         }
     }
