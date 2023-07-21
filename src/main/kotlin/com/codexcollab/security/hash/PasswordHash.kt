@@ -1,4 +1,4 @@
-package com.codexcollab.encrypt
+package com.codexcollab.security.hash
 
 import io.ktor.util.*
 import javax.crypto.Mac

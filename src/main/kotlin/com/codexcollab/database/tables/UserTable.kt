@@ -7,8 +7,8 @@ import java.time.LocalDateTime
 object UserTable: Table("users") {
     val id = integer("id").autoIncrement()
     val email = varchar("email",256)
-    val name = varchar("name",256)
-    val designation = varchar("designation", 256)
+    val name = varchar("name",256).nullable()
+    val designation = varchar("designation", 256).nullable()
     val authToken = text("auth_token")
     val lastUpdatedAt = datetime("last_updated_at").clientDefault { LocalDateTime.now() }
     override val primaryKey = PrimaryKey(email)

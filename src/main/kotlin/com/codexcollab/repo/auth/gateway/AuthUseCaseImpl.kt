@@ -1,9 +1,9 @@
-package com.codexcollab.service
+package com.codexcollab.repo.auth.gateway
 
-import com.codexcollab.model.Auth
-import com.codexcollab.model.RegisterAuth
+import com.codexcollab.model.response.Auth
+import com.codexcollab.model.request.RegisterAuth
 
-interface AuthService {
+interface AuthUseCaseImpl {
     suspend fun login(email: String, password: String): Auth?
     suspend fun register(register: RegisterAuth): Auth?
     suspend fun checkIfAccountExists(email: String): Auth?

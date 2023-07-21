@@ -1,9 +1,9 @@
-package com.codexcollab.repo
+package com.codexcollab.repo.auth.gateway
 
 import com.codexcollab.base.BaseResponse
-import com.codexcollab.model.RegisterAuth
+import com.codexcollab.model.request.RegisterAuth
 
-interface AuthRepo {
+interface AuthPresenterImpl {
     suspend fun register(request: RegisterAuth): BaseResponse<Any>
     suspend fun login(email: String, password: String): BaseResponse<Any>
 }

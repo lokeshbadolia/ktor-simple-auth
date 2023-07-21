@@ -1,4 +1,4 @@
-package com.codexcollab.database
+package com.codexcollab.database.connection
 
 import com.codexcollab.database.tables.AuthTable
 import com.codexcollab.database.tables.UserTable
@@ -11,7 +11,6 @@ import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 
 object DatabaseFactory {
-
     fun init() {
         Database.connect(hikari())
         transaction {
@@ -31,7 +30,7 @@ object DatabaseFactory {
         return HikariDataSource(config)
     }
 
-    public suspend fun <T> dbQuery(block: () -> T): T = withContext(Dispatchers.IO) {
+    suspend fun <T> dbQuery(block: () -> T): T = withContext(Dispatchers.IO) {
         transaction { block() }
     }
 }

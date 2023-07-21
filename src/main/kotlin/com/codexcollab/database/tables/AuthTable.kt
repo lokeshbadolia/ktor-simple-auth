@@ -9,5 +9,5 @@ object AuthTable: Table("auth") {
     val email = varchar("email",256)
     val password = text("password")
     val createdAt = datetime("created_at").clientDefault { LocalDateTime.now() }
-    override val primaryKey = PrimaryKey(id)
+    override val primaryKey = PrimaryKey(email)
 }
