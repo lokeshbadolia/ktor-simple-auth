@@ -4,7 +4,7 @@ import com.codexcollab.database.connection.DatabaseFactory.dbQuery
 import com.codexcollab.database.tables.UserTable
 import com.codexcollab.model.request.RegisterUser
 import com.codexcollab.model.response.User
-import com.codexcollab.repo.user.gateway.UserUseCaseImpl
+import com.codexcollab.repo.user.implementation.UserUseCaseImpl
 import org.jetbrains.exposed.sql.*
 import java.time.LocalDateTime
 

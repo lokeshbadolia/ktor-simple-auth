@@ -1,7 +1,7 @@
 package com.codexcollab.repo.user.routes
 
 import com.codexcollab.model.request.RegisterUser
-import com.codexcollab.repo.user.gateway.UserPresenterImpl
+import com.codexcollab.repo.user.implementation.UserPresenterImpl
 import com.codexcollab.security.jwt.JwtConfig
 import io.ktor.server.application.*
 import io.ktor.server.auth.*

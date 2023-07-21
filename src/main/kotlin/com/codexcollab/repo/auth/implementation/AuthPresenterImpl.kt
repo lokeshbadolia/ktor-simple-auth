@@ -1,4 +1,4 @@
-package com.codexcollab.repo.auth.gateway
+package com.codexcollab.repo.auth.implementation
 
 import com.codexcollab.base.BaseResponse
 import com.codexcollab.model.request.RegisterAuth

@@ -2,8 +2,8 @@ package com.codexcollab.repo.auth.presenter
 
 import com.codexcollab.base.BaseResponse
 import com.codexcollab.model.request.RegisterAuth
-import com.codexcollab.repo.auth.gateway.AuthPresenterImpl
-import com.codexcollab.repo.auth.gateway.AuthUseCaseImpl
+import com.codexcollab.repo.auth.implementation.AuthPresenterImpl
+import com.codexcollab.repo.auth.implementation.AuthUseCaseImpl
 import io.ktor.http.*
 
 

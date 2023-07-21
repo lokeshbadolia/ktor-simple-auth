@@ -1,4 +1,4 @@
-package com.codexcollab.repo.user.gateway
+package com.codexcollab.repo.user.implementation
 
 import com.codexcollab.base.BaseResponse
 import com.codexcollab.model.request.RegisterUser

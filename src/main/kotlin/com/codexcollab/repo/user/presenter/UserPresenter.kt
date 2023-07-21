@@ -2,8 +2,8 @@ package com.codexcollab.repo.user.presenter
 
 import com.codexcollab.base.BaseResponse
 import com.codexcollab.model.request.RegisterUser
-import com.codexcollab.repo.user.gateway.UserPresenterImpl
-import com.codexcollab.repo.user.gateway.UserUseCaseImpl
+import com.codexcollab.repo.user.implementation.UserPresenterImpl
+import com.codexcollab.repo.user.implementation.UserUseCaseImpl
 import io.ktor.http.*
 
 

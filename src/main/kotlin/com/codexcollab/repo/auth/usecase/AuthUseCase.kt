@@ -7,7 +7,7 @@ import com.codexcollab.security.jwt.JwtConfig
 import com.codexcollab.security.hash.hash
 import com.codexcollab.model.response.Auth
 import com.codexcollab.model.request.RegisterAuth
-import com.codexcollab.repo.auth.gateway.AuthUseCaseImpl
+import com.codexcollab.repo.auth.implementation.AuthUseCaseImpl
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.statements.InsertStatement
 import org.koin.core.component.KoinComponent
