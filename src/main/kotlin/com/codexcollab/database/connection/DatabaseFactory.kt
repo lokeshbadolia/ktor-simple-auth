@@ -22,7 +22,7 @@ object DatabaseFactory {
     private fun hikari(): HikariDataSource {
         val config = HikariConfig()
         config.driverClassName = "org.postgresql.Driver"
-        config.jdbcUrl = "jdbc:postgresql:ktorsimpleauth?user=postgres&password=admin"
+        config.jdbcUrl = "jdbc:postgresql://ktorsimpleauth.cgpjimnomfnq.eu-north-1.rds.amazonaws.com:5432/ktorsimpleauth?user=postgres&password=lokesh1234"
         config.maximumPoolSize = 3
         config.isAutoCommit = false
         config.transactionIsolation = "TRANSACTION_REPEATABLE_READ"

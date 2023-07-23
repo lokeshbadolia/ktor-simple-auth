@@ -16,7 +16,7 @@ import org.koin.logger.slf4jLogger
 
 
 fun main() {
-    embeddedServer(Netty, port = 8080, host = "127.0.0.1"){
+    embeddedServer(Netty, port = 8081, host = "0.0.0.0"){
         install(Koin) {
             slf4jLogger()
             modules(listOf(jwtModule, authModules, userModules))
